@@ -89,11 +89,13 @@ export default function Hero() {
           </a>
 
           <a
-            href="#datasets"
+            href="https://www.kaggle.com/datasets/simhadrisadaram/mimic-cxr-dataset"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-white border border-slate-300 hover:border-slate-400 text-slate-800 hover:bg-slate-50 font-bold text-sm shadow-sm transition-all"
           >
             <Database className="w-4 h-4 text-emerald-700" />
-            <span>Dataset (HF)</span>
+            <span>Dataset</span>
           </a>
         </div>
 
