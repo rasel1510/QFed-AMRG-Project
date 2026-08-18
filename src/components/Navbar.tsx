@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FileText, Github, Sparkles, BookOpen, Layers, BarChart3, Database, Copy, Check, ShieldCheck, Cpu } from "lucide-react";
+import { FileText, Sparkles, BookOpen, Layers, BarChart3, Database, Copy, Check, ShieldCheck, Cpu } from "lucide-react";
+import { GithubIcon } from "./icons/GithubIcon";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -88,7 +89,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-gradient-to-r from-teal-500 to-cyan-500 text-slate-950 hover:opacity-95 transition-all shadow-lg shadow-teal-500/20"
           >
-            <Github className="w-4 h-4" />
+            <GithubIcon className="w-4 h-4" />
             <span className="hidden sm:inline">Code / GitHub</span>
           </a>
         </div>

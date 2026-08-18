@@ -230,8 +230,8 @@ export default function MethodModules() {
                 {/* Mathematical Formula Display */}
                 <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 font-mono text-xs text-indigo-300 space-y-1">
                   <p className="text-slate-400 font-sans text-[11px] mb-1 font-semibold">AMB Adapter Routing Equation:</p>
-                  <p>H_i(x) = α_i · A_shared(x) + (1 - α_i) · A_local^{(i)}(x)</p>
-                  <p>min L_AMB = L_report + λ_mutual · I(A_shared; A_local^{(i)})</p>
+                  <p>H_i(x) = α_i · A_shared(x) + (1 - α_i) · A_local^(i)(x)</p>
+                  <p>min L_AMB = L_report + λ_mutual · I(A_shared; A_local^(i))</p>
                 </div>
 
               </div>

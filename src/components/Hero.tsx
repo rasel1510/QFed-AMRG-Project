@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { FileText, Github, Sparkles, Copy, Check, Download, ShieldCheck, Cpu, ArrowRight, Zap, Database, Award } from "lucide-react";
+import { FileText, Sparkles, Copy, Check, Download, ShieldCheck, Cpu, ArrowRight, Zap, Database, Award } from "lucide-react";
+import { GithubIcon } from "./icons/GithubIcon";
 
 export default function Hero() {
   const [copiedBib, setCopiedBib] = useState(false);
@@ -81,7 +82,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 border border-slate-700 hover:border-slate-500 text-slate-200 hover:text-white font-semibold text-sm transition-all shadow-md"
           >
-            <Github className="w-4 h-4 text-slate-400" />
+            <GithubIcon className="w-4 h-4 text-slate-400" />
             <span>Code Repository</span>
           </a>
 

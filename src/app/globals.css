@@ -45,6 +45,7 @@ body {
 .glass-panel-hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .glass-panel-hover:hover {
   border-color: rgba(20, 184, 166, 0.4);
   box-shadow: 0 0 25px rgba(20, 184, 166, 0.15);
@@ -60,6 +61,7 @@ body {
 .quantum-glow-border {
   position: relative;
 }
+
 .quantum-glow-border::after {
   content: '';
   position: absolute;
@@ -71,6 +73,7 @@ body {
   filter: blur(8px);
   transition: opacity 0.3s ease;
 }
+
 .quantum-glow-border:hover::after {
   opacity: 0.8;
 }
@@ -80,13 +83,16 @@ body {
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #090d16;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #1e293b;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #0d9488;
 }

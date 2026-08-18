@@ -1,6 +1,7 @@
 "use client";
 
-import { Cpu, ArrowUp, Github, FileText } from "lucide-react";
+import { Cpu, ArrowUp, FileText } from "lucide-react";
+import { GithubIcon } from "./icons/GithubIcon";
 
 export default function Footer() {
   const scrollToTop = () => {
