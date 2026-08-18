@@ -34,13 +34,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
-      <body className="bg-slate-950 text-slate-100 antialiased font-['Outfit',sans-serif] selection:bg-teal-500/30 selection:text-teal-200">
+      <body className="bg-white text-slate-800 antialiased font-['Outfit',sans-serif] selection:bg-teal-100 selection:text-teal-900">
         {children}
       </body>
     </html>

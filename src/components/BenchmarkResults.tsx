@@ -61,35 +61,35 @@ export default function BenchmarkResults() {
   ];
 
   return (
-    <section id="results" className="py-20 bg-slate-950 relative">
+    <section id="results" className="py-20 bg-white relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-900 border border-teal-500/30 text-teal-300 text-xs font-mono mb-4">
-            <BarChart3 className="w-3.5 h-3.5 text-teal-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-50 border border-teal-200 text-teal-700 text-xs font-mono mb-4">
+            <BarChart3 className="w-3.5 h-3.5 text-teal-600" />
             <span>EXPERIMENTAL RESULTS</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Benchmark Evaluations & Paper Results
           </h2>
-          <p className="text-slate-400 mt-3 text-sm sm:text-base">
+          <p className="text-slate-600 mt-3 text-sm sm:text-base">
             Empirical validation on MIMIC-CXR and IU X-Ray datasets demonstrating superior clinical report quality, medical correctness, and communication efficiency.
           </p>
         </div>
 
         {/* View Selection Tabs */}
         <div className="flex justify-center mb-8">
-          <div className="inline-flex p-1.5 rounded-xl bg-slate-900 border border-slate-800">
+          <div className="inline-flex p-1.5 rounded-xl bg-slate-100 border border-slate-200">
             <button
               onClick={() => setActiveTab("tables")}
               className={`px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 ${
                 activeTab === "tables"
-                  ? "bg-gradient-to-r from-teal-500 to-cyan-500 text-slate-950 shadow-md"
-                  : "text-slate-400 hover:text-white"
+                  ? "bg-white text-slate-900 shadow-sm border border-slate-200"
+                  : "text-slate-600 hover:text-slate-900"
               }`}
             >
-              <Table className="w-4 h-4" />
+              <Table className="w-4 h-4 text-teal-600" />
               <span>Benchmark Tables</span>
             </button>
 
@@ -97,11 +97,11 @@ export default function BenchmarkResults() {
               onClick={() => setActiveTab("plots")}
               className={`px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 ${
                 activeTab === "plots"
-                  ? "bg-gradient-to-r from-teal-500 to-cyan-500 text-slate-950 shadow-md"
-                  : "text-slate-400 hover:text-white"
+                  ? "bg-white text-slate-900 shadow-sm border border-slate-200"
+                  : "text-slate-600 hover:text-slate-900"
               }`}
             >
-              <BarChart3 className="w-4 h-4" />
+              <BarChart3 className="w-4 h-4 text-teal-600" />
               <span>Scalability & Analysis Plots</span>
             </button>
 
@@ -109,11 +109,11 @@ export default function BenchmarkResults() {
               onClick={() => setActiveTab("qualitative")}
               className={`px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 ${
                 activeTab === "qualitative"
-                  ? "bg-gradient-to-r from-teal-500 to-cyan-500 text-slate-950 shadow-md"
-                  : "text-slate-400 hover:text-white"
+                  ? "bg-white text-slate-900 shadow-sm border border-slate-200"
+                  : "text-slate-600 hover:text-slate-900"
               }`}
             >
-              <Eye className="w-4 h-4" />
+              <Eye className="w-4 h-4 text-teal-600" />
               <span>Qualitative Output Analysis</span>
             </button>
           </div>
@@ -128,7 +128,7 @@ export default function BenchmarkResults() {
               <button
                 onClick={() => setActiveTable("t1")}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
-                  activeTable === "t1" ? "bg-teal-500/20 text-teal-300 border border-teal-500/40" : "bg-slate-900 text-slate-400 border border-slate-800"
+                  activeTable === "t1" ? "bg-teal-50 text-teal-700 border border-teal-300 font-bold" : "bg-white text-slate-600 border border-slate-200 hover:border-slate-300"
                 }`}
               >
                 Table 1 (Overall Metrics)
@@ -136,7 +136,7 @@ export default function BenchmarkResults() {
               <button
                 onClick={() => setActiveTable("t2")}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
-                  activeTable === "t2" ? "bg-teal-500/20 text-teal-300 border border-teal-500/40" : "bg-slate-900 text-slate-400 border border-slate-800"
+                  activeTable === "t2" ? "bg-teal-50 text-teal-700 border border-teal-300 font-bold" : "bg-white text-slate-600 border border-slate-200 hover:border-slate-300"
                 }`}
               >
                 Table 2 (Medical Correctness)
@@ -144,7 +144,7 @@ export default function BenchmarkResults() {
               <button
                 onClick={() => setActiveTable("t3")}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
-                  activeTable === "t3" ? "bg-teal-500/20 text-teal-300 border border-teal-500/40" : "bg-slate-900 text-slate-400 border border-slate-800"
+                  activeTable === "t3" ? "bg-teal-50 text-teal-700 border border-teal-300 font-bold" : "bg-white text-slate-600 border border-slate-200 hover:border-slate-300"
                 }`}
               >
                 Table 3 (Comm. & Privacy)
@@ -152,7 +152,7 @@ export default function BenchmarkResults() {
               <button
                 onClick={() => setActiveTable("ablation")}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
-                  activeTable === "ablation" ? "bg-teal-500/20 text-teal-300 border border-teal-500/40" : "bg-slate-900 text-slate-400 border border-slate-800"
+                  activeTable === "ablation" ? "bg-teal-50 text-teal-700 border border-teal-300 font-bold" : "bg-white text-slate-600 border border-slate-200 hover:border-slate-300"
                 }`}
               >
                 Ablation Study
@@ -160,18 +160,18 @@ export default function BenchmarkResults() {
             </div>
 
             {/* Table Display Card */}
-            <div className="glass-panel p-6 rounded-3xl border border-slate-800 space-y-6">
+            <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-6">
               
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-4">
                 <div>
-                  <h3 className="font-bold text-white text-lg">{tablesData[activeTable].title}</h3>
-                  <p className="text-xs text-slate-400">{tablesData[activeTable].desc}</p>
+                  <h3 className="font-bold text-slate-900 text-lg">{tablesData[activeTable].title}</h3>
+                  <p className="text-xs text-slate-500">{tablesData[activeTable].desc}</p>
                 </div>
                 <button
                   onClick={() => setSelectedPlot(tablesData[activeTable].img)}
-                  className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-300 hover:text-teal-300 hover:border-teal-500/40 font-mono transition-all flex items-center gap-1.5 self-start sm:self-auto"
+                  className="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-xs text-slate-700 hover:text-teal-700 hover:border-teal-300 font-mono transition-all flex items-center gap-1.5 self-start sm:self-auto shadow-sm"
                 >
-                  <ZoomIn className="w-3.5 h-3.5 text-teal-400" />
+                  <ZoomIn className="w-3.5 h-3.5 text-teal-600" />
                   <span>View Original Image</span>
                 </button>
               </div>
@@ -179,7 +179,7 @@ export default function BenchmarkResults() {
               {/* High Resolution Image Box */}
               <div
                 onClick={() => setSelectedPlot(tablesData[activeTable].img)}
-                className="relative w-full min-h-[250px] sm:min-h-[350px] bg-slate-900/90 rounded-2xl overflow-hidden flex items-center justify-center border border-slate-800 cursor-pointer group"
+                className="relative w-full min-h-[250px] sm:min-h-[350px] bg-slate-50 rounded-2xl overflow-hidden flex items-center justify-center border border-slate-200 cursor-pointer group"
               >
                 <Image
                   src={tablesData[activeTable].img}
@@ -188,8 +188,8 @@ export default function BenchmarkResults() {
                   height={500}
                   className="object-contain max-h-[500px] w-auto transition-transform duration-300 group-hover:scale-[1.01]"
                 />
-                <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="px-4 py-2 rounded-xl bg-slate-900/90 border border-teal-500/50 text-teal-300 text-xs font-bold shadow-xl backdrop-blur-md">
+                <div className="absolute inset-0 bg-slate-900/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="px-4 py-2 rounded-xl bg-white/90 border border-teal-300 text-teal-700 text-xs font-bold shadow-lg backdrop-blur-md">
                     Click to Enlarge Table Image
                   </span>
                 </div>
@@ -197,13 +197,13 @@ export default function BenchmarkResults() {
 
               {/* Formatted Interactive Table preview for Table 1 */}
               {activeTable === "t1" && (
-                <div className="mt-6 pt-6 border-t border-slate-800 overflow-x-auto">
-                  <span className="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider block mb-3">
+                <div className="mt-6 pt-6 border-t border-slate-200 overflow-x-auto">
+                  <span className="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider block mb-3">
                     Interactive Table View (MIMIC-CXR Benchmark):
                   </span>
-                  <table className="w-full text-left text-xs text-slate-300 border-collapse">
+                  <table className="w-full text-left text-xs text-slate-700 border-collapse">
                     <thead>
-                      <tr className="border-b border-slate-800 bg-slate-900/60 font-mono text-[11px] text-slate-400">
+                      <tr className="border-b border-slate-200 bg-slate-50 font-mono text-[11px] text-slate-600">
                         <th className="p-3">Model Architecture</th>
                         <th className="p-3">Setting</th>
                         <th className="p-3">BLEU-1</th>
@@ -213,19 +213,19 @@ export default function BenchmarkResults() {
                         <th className="p-3">CIDEr</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-slate-800/60 font-mono">
+                    <tbody className="divide-y divide-slate-100 font-mono">
                       {tablesData.t1.mimicData.map((row, idx) => (
-                        <tr key={idx} className={row.isBest ? "bg-teal-500/10 font-bold text-white" : "hover:bg-slate-900/30"}>
+                        <tr key={idx} className={row.isBest ? "bg-teal-50/70 font-bold text-slate-900" : "hover:bg-slate-50/50"}>
                           <td className="p-3 flex items-center gap-2 font-sans">
-                            {row.isBest && <CheckCircle2 className="w-3.5 h-3.5 text-teal-400" />}
+                            {row.isBest && <CheckCircle2 className="w-3.5 h-3.5 text-teal-600" />}
                             <span>{row.model}</span>
                           </td>
-                          <td className="p-3 text-slate-400">{row.type}</td>
+                          <td className="p-3 text-slate-500">{row.type}</td>
                           <td className="p-3">{row.bleu1}</td>
-                          <td className="p-3 text-teal-300">{row.bleu4}</td>
+                          <td className="p-3 text-teal-700">{row.bleu4}</td>
                           <td className="p-3">{row.meteor}</td>
                           <td className="p-3">{row.rouge}</td>
-                          <td className="p-3 text-cyan-300">{row.cider}</td>
+                          <td className="p-3 text-cyan-700">{row.cider}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -245,10 +245,10 @@ export default function BenchmarkResults() {
               <div
                 key={plot.id}
                 onClick={() => setSelectedPlot(plot.img)}
-                className="glass-panel p-4 rounded-2xl border border-slate-800 hover:border-teal-500/40 transition-all cursor-pointer group flex flex-col justify-between"
+                className="bg-white p-4 rounded-2xl border border-slate-200 hover:border-teal-300 shadow-sm hover:shadow-md transition-all cursor-pointer group flex flex-col justify-between"
               >
                 <div>
-                  <div className="relative w-full h-48 bg-slate-900/90 rounded-xl overflow-hidden mb-3 border border-slate-800 flex items-center justify-center">
+                  <div className="relative w-full h-48 bg-slate-50 rounded-xl overflow-hidden mb-3 border border-slate-200 flex items-center justify-center">
                     <Image
                       src={plot.img}
                       alt={plot.title}
@@ -256,10 +256,10 @@ export default function BenchmarkResults() {
                       className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <h3 className="font-bold text-white text-sm mb-1">{plot.title}</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed">{plot.desc}</p>
+                  <h3 className="font-bold text-slate-900 text-sm mb-1">{plot.title}</h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">{plot.desc}</p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] text-teal-400 font-mono">
+                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-teal-700 font-mono">
                   <span>Enlarge Figure</span>
                   <ZoomIn className="w-3.5 h-3.5" />
                 </div>
@@ -270,24 +270,24 @@ export default function BenchmarkResults() {
 
         {/* 3. Qualitative Output Analysis Tab */}
         {activeTab === "qualitative" && (
-          <div className="glass-panel p-6 rounded-3xl border border-slate-800 space-y-6">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+            <div className="flex items-center justify-between border-b border-slate-200 pb-4">
               <div>
-                <h3 className="font-bold text-white text-lg">Qualitative Report Generation Comparisons</h3>
-                <p className="text-xs text-slate-400">Side-by-side comparison of generated clinical impressions vs. radiologist ground truth.</p>
+                <h3 className="font-bold text-slate-900 text-lg">Qualitative Report Generation Comparisons</h3>
+                <p className="text-xs text-slate-500">Side-by-side comparison of generated clinical impressions vs. radiologist ground truth.</p>
               </div>
               <button
                 onClick={() => setSelectedPlot("/diagrams/Response.png")}
-                className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-300 hover:text-teal-300 transition-all flex items-center gap-1.5"
+                className="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-xs text-slate-700 hover:text-teal-700 transition-all flex items-center gap-1.5 shadow-sm"
               >
-                <ZoomIn className="w-3.5 h-3.5 text-teal-400" />
+                <ZoomIn className="w-3.5 h-3.5 text-teal-600" />
                 <span>Fullscreen View</span>
               </button>
             </div>
 
             <div
               onClick={() => setSelectedPlot("/diagrams/Response.png")}
-              className="relative w-full min-h-[300px] sm:min-h-[450px] bg-slate-900/90 rounded-2xl overflow-hidden flex items-center justify-center border border-slate-800 cursor-pointer group"
+              className="relative w-full min-h-[300px] sm:min-h-[450px] bg-slate-50 rounded-2xl overflow-hidden flex items-center justify-center border border-slate-200 cursor-pointer group"
             >
               <Image
                 src="/diagrams/Response.png"
@@ -304,15 +304,15 @@ export default function BenchmarkResults() {
 
       {/* Lightbox Modal for Selected Plot */}
       {selectedPlot && (
-        <div className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-xl flex items-center justify-center p-4 sm:p-8">
+        <div className="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-8">
           <div className="relative w-full h-full max-w-7xl max-h-[90vh] flex flex-col items-center justify-center">
             <button
               onClick={() => setSelectedPlot(null)}
-              className="absolute top-2 right-2 p-2.5 rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-white hover:border-teal-500/50 transition-all z-50"
+              className="absolute top-2 right-2 p-2.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:text-slate-900 transition-all z-50 shadow-md"
             >
               <X className="w-6 h-6" />
             </button>
-            <div className="w-full h-full relative flex items-center justify-center">
+            <div className="w-full h-full relative flex items-center justify-center bg-white p-4 rounded-2xl">
               <Image
                 src={selectedPlot}
                 alt="Enlarged Plot"

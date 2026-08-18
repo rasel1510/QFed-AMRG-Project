@@ -9,13 +9,13 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-slate-950 border-t border-slate-800/80 py-12 text-slate-400 text-xs">
+    <footer className="bg-slate-900 border-t border-slate-800 py-12 text-slate-400 text-xs">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-900">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
           
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-teal-400 to-indigo-600 p-[1px]">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-teal-400 to-indigo-500 p-[1px]">
               <div className="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center">
                 <Cpu className="w-4 h-4 text-teal-400" />
               </div>
@@ -29,14 +29,14 @@ export default function Footer() {
           <div className="flex items-center gap-4 font-medium text-slate-300">
             <a href="#abstract" className="hover:text-teal-300 transition-colors">Abstract</a>
             <a href="#architecture" className="hover:text-teal-300 transition-colors">Architecture</a>
-            <a href="#demo" className="hover:text-teal-300 transition-colors">Simulator</a>
+            <a href="#method" className="hover:text-teal-300 transition-colors">Methodology</a>
             <a href="#results" className="hover:text-teal-300 transition-colors">Results</a>
             <a href="#datasets" className="hover:text-teal-300 transition-colors">Datasets</a>
           </div>
 
           <button
             onClick={scrollToTop}
-            className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-teal-500/40 transition-all flex items-center gap-1.5 font-mono text-[11px]"
+            className="p-2.5 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:border-teal-500/40 transition-all flex items-center gap-1.5 font-mono text-[11px]"
           >
             <ArrowUp className="w-3.5 h-3.5 text-teal-400" />
             <span>Back to top</span>
@@ -48,7 +48,7 @@ export default function Footer() {
           <p>
             Submitted to <strong className="text-slate-200">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026)</strong>.
             <br />
-            Authors: <span className="text-slate-300 font-semibold">Dip Kumar Saha, Mohammad Rasel Ahmed, Md. Kishore Morol</span>.
+            Authors: <span className="text-slate-300 font-semibold">Dip Kumar Saha*, Mohammad Rasel Ahmed, Md. Kishor Morol*</span>.
           </p>
 
           <p className="font-mono text-slate-400">
