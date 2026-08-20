@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "QFed-AMRG: Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation | WACV 2026",
+  title: "QFed-AMRG: Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation",
   description: "Official research website for QFed-AMRG: A communication-efficient quantum federated vision-language architecture for privacy-preserving multi-client clinical report generation.",
   keywords: [
     "QFed-AMRG",
@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     "Medical Imaging AI",
     "MIMIC-CXR",
     "IU X-Ray",
-    "WACV 2026",
     "QML",
     "Privacy Preserving AI"
   ],

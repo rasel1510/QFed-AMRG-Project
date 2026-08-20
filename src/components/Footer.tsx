@@ -29,7 +29,6 @@ export default function Footer() {
           <div className="flex items-center gap-4 font-medium text-slate-300">
             <a href="#abstract" className="hover:text-teal-300 transition-colors">Abstract</a>
             <a href="#architecture" className="hover:text-teal-300 transition-colors">Architecture</a>
-            <a href="#method" className="hover:text-teal-300 transition-colors">Methodology</a>
             <a href="#results" className="hover:text-teal-300 transition-colors">Results</a>
             <a href="#datasets" className="hover:text-teal-300 transition-colors">Datasets</a>
           </div>
@@ -46,8 +45,6 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-[11px]">
           <p>
-            Submitted to <strong className="text-slate-200">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026)</strong>.
-            <br />
             Authors: <span className="text-slate-300 font-semibold">Dip Kumar Saha*, Mohammad Rasel Ahmed, Md. Kishor Morol*</span>.
           </p>
 

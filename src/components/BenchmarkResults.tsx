@@ -195,43 +195,7 @@ export default function BenchmarkResults() {
                 </div>
               </div>
 
-              {/* Formatted Interactive Table preview for Table 1 */}
-              {activeTable === "t1" && (
-                <div className="mt-6 pt-6 border-t border-slate-200 overflow-x-auto">
-                  <span className="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider block mb-3">
-                    Interactive Table View (MIMIC-CXR Benchmark):
-                  </span>
-                  <table className="w-full text-left text-xs text-slate-700 border-collapse">
-                    <thead>
-                      <tr className="border-b border-slate-200 bg-slate-50 font-mono text-[11px] text-slate-600">
-                        <th className="p-3">Model Architecture</th>
-                        <th className="p-3">Setting</th>
-                        <th className="p-3">BLEU-1</th>
-                        <th className="p-3">BLEU-4</th>
-                        <th className="p-3">METEOR</th>
-                        <th className="p-3">ROUGE-L</th>
-                        <th className="p-3">CIDEr</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-slate-100 font-mono">
-                      {tablesData.t1.mimicData.map((row, idx) => (
-                        <tr key={idx} className={row.isBest ? "bg-teal-50/70 font-bold text-slate-900" : "hover:bg-slate-50/50"}>
-                          <td className="p-3 flex items-center gap-2 font-sans">
-                            {row.isBest && <CheckCircle2 className="w-3.5 h-3.5 text-teal-600" />}
-                            <span>{row.model}</span>
-                          </td>
-                          <td className="p-3 text-slate-500">{row.type}</td>
-                          <td className="p-3">{row.bleu1}</td>
-                          <td className="p-3 text-teal-700">{row.bleu4}</td>
-                          <td className="p-3">{row.meteor}</td>
-                          <td className="p-3">{row.rouge}</td>
-                          <td className="p-3 text-cyan-700">{row.cider}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              )}
+
 
             </div>
 

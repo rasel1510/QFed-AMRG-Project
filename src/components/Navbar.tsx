@@ -51,7 +51,7 @@ export default function Navbar() {
         {/* Right Action Pills */}
         <div className="flex items-center gap-3">
           <a
-            href="https://github.com"
+            href="https://github.com/Dipkumarsaha/QFed-AMRG"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold rounded-xl bg-white border border-slate-200 text-slate-700 hover:border-slate-300 hover:text-slate-900 transition-all shadow-xs"

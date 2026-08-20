@@ -4,47 +4,57 @@ import { useState } from "react";
 import Image from "next/image";
 import { Maximize2, X, ZoomIn, Cpu, Layers, ShieldCheck, Sparkles, Check, ChevronRight } from "lucide-react";
 
+
+
+const highlights = [
+  {
+    number: "01",
+    tag: "FEDERATED VLM FRAMEWORK",
+    title: "Quantum-Enhanced Federated VLM Architecture",
+    description:
+      "We propose quantum enhanced federated large vision languages models learning architecture for privacy preserving multi institution clinical report generation, which combines quantum expression learning and VLMs within a unified communication efficient framework.",
+    icon: Sparkles,
+    topBar: "bg-indigo-500",
+    iconBox: "bg-indigo-50 border border-indigo-100 text-indigo-600",
+    pillTag: "bg-indigo-50 text-indigo-700 border border-indigo-100",
+    cardBorder: "border-slate-200/80 hover:border-indigo-300 hover:shadow-indigo-500/10",
+  },
+  {
+    number: "02",
+    tag: "QUANTUM FEATURE PURIFICATION",
+    title: "Quantum Representation Enhancement (QREM)",
+    description:
+      "We introduce QREM that exploits parameterized quantum circuits to purify visual expressions, enhancing feature discriminability and extensiveness over cross client data heterogeneity while storing clinically connected semantic information.",
+    icon: Cpu,
+    topBar: "bg-sky-500",
+    iconBox: "bg-sky-50 border border-sky-100 text-sky-600",
+    pillTag: "bg-sky-50 text-sky-700 border border-sky-100",
+    cardBorder: "border-slate-200/80 hover:border-sky-300 hover:shadow-sky-500/10",
+  },
+  {
+    number: "03",
+    tag: "PARAMETER-EFFICIENT ADAPTATION",
+    title: "Adaptive Mutual Boosting (AMB)",
+    description:
+      "We employed AMB an adaptive parameter efficient adaptation method that jointly performs adaptive adapter routing, mutual information boosting, and personalized federated enhancement to efficiently balance universally shared clinical data in heterogeneous healthcare environments.",
+    icon: Layers,
+    topBar: "bg-emerald-500",
+    iconBox: "bg-emerald-50 border border-emerald-100 text-emerald-600",
+    pillTag: "bg-emerald-50 text-emerald-700 border border-emerald-100",
+    cardBorder: "border-slate-200/80 hover:border-emerald-300 hover:shadow-emerald-500/10",
+  },
+];
+
 export default function ArchitectureViewer() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<"pipeline" | "amb">("pipeline");
-
-  const pipelineSteps = [
-    {
-      id: "qrem",
-      title: "1. Quantum Representation Enhancement (QREM)",
-      desc: "Transforms raw chest X-ray features using parameterized quantum circuits (PQCs) to generate rich quantum-enhanced embeddings, boosting contrastive cross-modal alignment.",
-      icon: Cpu,
-      color: "text-teal-700 border-teal-200 bg-teal-50",
-    },
-    {
-      id: "amb",
-      title: "2. Adaptive Mutual Boosting (AMB)",
-      desc: "Dynamically coordinates global shared adapters and local personalized adapters to resolve cross-institution client data heterogeneity without over-fitting.",
-      icon: Layers,
-      color: "text-cyan-700 border-cyan-200 bg-cyan-50",
-    },
-    {
-      id: "vlm",
-      title: "3. Frozen Clinical LVLM Adaptation",
-      desc: "Keeps the heavy vision-language model parameters frozen, updating only lightweight adapters to save communication bandwidth during federated synchronization.",
-      icon: Sparkles,
-      color: "text-indigo-700 border-indigo-200 bg-indigo-50",
-    },
-    {
-      id: "fl",
-      title: "4. Differential Privacy Federated Sync",
-      desc: "Only lightweight adapter gradients are aggregated across hospital clients, eliminating any exposure of raw medical images or private health information (PHI).",
-      icon: ShieldCheck,
-      color: "text-emerald-700 border-emerald-200 bg-emerald-50",
-    },
-  ];
 
   return (
     <section id="architecture" className="py-20 bg-white relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-50 border border-teal-200 text-teal-700 text-xs font-mono mb-4">
             <Layers className="w-3.5 h-3.5 text-teal-600" />
             <span>SYSTEM ARCHITECTURE</span>
@@ -52,9 +62,6 @@ export default function ArchitectureViewer() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             QFed-AMRG Technical Architecture
           </h2>
-          <p className="text-slate-600 mt-3 text-sm sm:text-base">
-            End-to-end overview of quantum-enhanced representation, dual-adapter mutual boosting, and federated vision-language orchestration.
-          </p>
         </div>
 
         {/* Diagram Selection Tabs */}
@@ -117,25 +124,25 @@ export default function ArchitectureViewer() {
               <p className="text-slate-600 mb-2.5">
                 The architecture of QFed-AMRG contains key stages following model initialization:
               </p>
-              <ul className="space-y-2 list-none pl-0 text-slate-700">
+              <ul className="space-y-2.5 list-none pl-0 text-slate-700">
                 <li className="flex items-start gap-2">
                   <span className="font-bold text-teal-700 font-mono shrink-0">(1)</span>
                   <span>
-                    <strong className="text-slate-900">Allocation:</strong> The central server allocates primary method environments to participating clients.
+                    <strong className="text-slate-900 font-semibold">Allocation:</strong> The central server allocates primary method environments to participating clients.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="font-bold text-teal-700 font-mono shrink-0">(2)</span>
                   <span>
-                    <strong className="text-slate-900">Local Client Learning:</strong> Individual clients train their methods employing two prime modules: 
-                    <em className="text-slate-800 not-italic font-semibold"> Hierarchical Contrastive Learning and Prompting (HCL)</em> resolves heterogeneity utilizing client-conscious feature contrasting, ensuring cross-center information imparting with clinical prompting; 
-                    <em className="text-slate-800 not-italic font-semibold"> Adaptive Mutual Boosting (AMB)</em> controls text heterogeneity via a dual dynamic pattern—the regular adapter (<code className="bg-slate-200 px-1 py-0.5 rounded text-xs font-bold text-indigo-700">∀i</code>) collects universally shared reporting designs, while the specialized adapter (<code className="bg-slate-200 px-1 py-0.5 rounded text-xs font-bold text-indigo-700">∃*p</code>) captures client-specific nuances.
+                    <strong className="text-slate-900 font-semibold">Local Client Learning:</strong> Individual clients train their methods employing two prime modules: 
+                    <em className="text-slate-800 not-italic font-medium"> Hierarchical Contrastive Learning and Prompting (HCL)</em> resolves heterogeneity utilizing client-conscious feature contrasting, ensuring cross-center information imparting with clinical prompting; 
+                    <em className="text-slate-800 not-italic font-medium"> Adaptive Mutual Boosting (AMB)</em> controls text heterogeneity via a dual dynamic pattern—the regular adapter (<code className="bg-slate-200/80 px-1 py-0.5 rounded text-xs font-bold text-indigo-700 font-mono">∀i</code>) collects universally shared reporting designs, while the specialized adapter (<code className="bg-slate-200/80 px-1 py-0.5 rounded text-xs font-bold text-indigo-700 font-mono">∃*p</code>) captures client-specific nuances.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="font-bold text-teal-700 font-mono shrink-0">(3)</span>
                   <span>
-                    <strong className="text-slate-900">Accumulation:</strong> Only encoder parameters and generic adjusters are uploaded and the server accumulates the refined updates, jointly resolving communication effectiveness.
+                    <strong className="text-slate-900 font-semibold">Accumulation:</strong> Only encoder parameters and generic adjusters are uploaded and the server accumulates the refined updates, jointly resolving communication effectiveness.
                   </span>
                 </li>
               </ul>
@@ -152,25 +159,69 @@ export default function ArchitectureViewer() {
           )}
         </div>
 
-        {/* Pipeline Step Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {pipelineSteps.map((step) => {
-            const Icon = step.icon;
-            return (
-              <div
-                key={step.id}
-                className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex items-start gap-4"
-              >
-                <div className={`p-3 rounded-xl border ${step.color} shrink-0`}>
-                  <Icon className="w-5 h-5" />
+
+
+        {/* Key Highlights Section (Placed After Architecture & Stages Description) */}
+        <div className="mt-16 mb-10 max-w-6xl mx-auto text-center border-t border-slate-200/80 pt-16">
+          {/* Top Pill Badge */}
+          <div className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-mono font-bold uppercase tracking-wider mb-3">
+            CORE CONTRIBUTIONS
+          </div>
+
+          {/* Title */}
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+            Key Highlights
+          </h3>
+
+          {/* Subtitle */}
+          <p className="text-slate-500 text-sm sm:text-base max-w-2xl mx-auto font-medium leading-relaxed mb-10">
+            QFed-AMRG is a privacy-preserving quantum-enhanced federated vision-language framework for multi-institution clinical report generation.
+          </p>
+
+          {/* 3 Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch text-left">
+            {highlights.map((item, idx) => {
+              const IconComponent = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className={`bg-white rounded-2xl p-6 sm:p-7 border ${item.cardBorder} shadow-xs hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden group`}
+                >
+                  {/* Top Colored Accent Bar */}
+                  <div className={`absolute top-0 left-0 right-0 h-1.5 ${item.topBar}`} />
+
+                  <div className="flex flex-col h-full justify-between">
+                    <div>
+                      {/* Card Header: Icon & Big Faded Number */}
+                      <div className="flex items-center justify-between gap-2 mb-5">
+                        <div className={`w-11 h-11 rounded-xl flex items-center justify-center ${item.iconBox}`}>
+                          <IconComponent className="w-5 h-5" />
+                        </div>
+                        <span className="text-3xl font-extrabold font-mono text-slate-200 group-hover:text-slate-300 transition-colors select-none">
+                          {item.number}
+                        </span>
+                      </div>
+
+                      {/* Tag Pill */}
+                      <span className={`inline-block text-[11px] font-bold font-mono tracking-wider uppercase px-3 py-1 rounded-full ${item.pillTag} mb-3.5`}>
+                        {item.tag}
+                      </span>
+
+                      {/* Card Title */}
+                      <h4 className="text-base sm:text-lg font-bold text-slate-900 mb-3 leading-snug group-hover:text-slate-800 transition-colors">
+                        {item.title}
+                      </h4>
+
+                      {/* Card Body */}
+                      <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-bold text-slate-900 text-base mb-1">{step.title}</h3>
-                  <p className="text-slate-600 text-xs leading-relaxed">{step.desc}</p>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
 
       </div>

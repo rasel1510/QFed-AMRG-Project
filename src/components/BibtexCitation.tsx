@@ -6,11 +6,10 @@ import { BookOpen, Copy, Check, FileText, Download } from "lucide-react";
 export default function BibtexCitation() {
   const [copied, setCopied] = useState(false);
 
-  const bibtex = `@inproceedings{saha2026qfedamrg,
-  title     = {QFed-AMRG: Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation},
-  author    = {Saha*, Dip Kumar and Ahmed, Mohammad Rasel and Morol*, Md. Kishor},
-  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-  year      = {2026}
+  const bibtex = `@article{saha2026qfedamrg,
+  title  = {QFed-AMRG: Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation},
+  author = {Saha*, Dip Kumar and Ahmed, Mohammad Rasel and Morol*, Md. Kishor},
+  year   = {2026}
 }`;
 
   const copyToClipboard = () => {
@@ -23,7 +22,7 @@ export default function BibtexCitation() {
     const element = document.createElement("a");
     const file = new Blob([bibtex], { type: "text/plain" });
     element.href = URL.createObjectURL(file);
-    element.download = "QFed-AMRG-WACV2026.bib";
+    element.download = "QFed-AMRG.bib";
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
@@ -43,7 +42,7 @@ export default function BibtexCitation() {
             How to Cite QFed-AMRG
           </h2>
           <p className="text-slate-600 mt-2 text-xs sm:text-sm">
-            If you find this research paper or implementation useful in your academic research, please cite our WACV work.
+            If you find this research paper or implementation useful in your academic research, please cite our work.
           </p>
         </div>
 
@@ -76,10 +75,6 @@ export default function BibtexCitation() {
           <pre className="p-4 sm:p-6 rounded-2xl bg-slate-900 text-teal-300 text-xs sm:text-sm font-mono overflow-x-auto leading-relaxed shadow-inner">
             {bibtex}
           </pre>
-
-          <p className="text-[11px] text-slate-500 font-mono mt-4 text-center">
-            IEEE / CVF Winter Conference on Applications of Computer Vision (WACV 2026)
-          </p>
 
         </div>
 

@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AbstractSection from "@/components/AbstractSection";
 import ArchitectureViewer from "@/components/ArchitectureViewer";
-import MethodModules from "@/components/MethodModules";
 import BenchmarkResults from "@/components/BenchmarkResults";
 import DatasetSection from "@/components/DatasetSection";
 import BibtexCitation from "@/components/BibtexCitation";
@@ -15,7 +14,6 @@ export default function Home() {
       <Hero />
       <AbstractSection />
       <ArchitectureViewer />
-      <MethodModules />
       <BenchmarkResults />
       <DatasetSection />
       <BibtexCitation />
