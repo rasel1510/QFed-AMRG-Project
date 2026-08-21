@@ -45,7 +45,7 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-[11px]">
           <p>
-            Authors: <span className="text-slate-300 font-semibold">Dip Kumar Saha*, Mohammad Rasel Ahmed, Md. Kishor Morol*, Nafiz Fahad*</span>.
+            Authors: <span className="text-slate-300 font-semibold">Dip Kumar Saha*, Mohammad Rasel Ahmed, Nafiz Fahad*, Md. Kishor Morol*</span>.
           </p>
 
           <p className="font-mono text-slate-400">

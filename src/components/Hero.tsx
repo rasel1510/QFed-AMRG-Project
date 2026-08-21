@@ -20,17 +20,17 @@ export default function Hero() {
       ]
     },
     {
-      name: "Md. Kishor Morol*",
-      affiliations: [
-        "Elite Research Lab, NY, USA",
-        "Cornell University, NY, USA"
-      ]
-    },
-    {
       name: "Nafiz Fahad*",
       affiliations: [
         "Elite Research Lab, NY, USA",
         "Multimedia University, Melaka, Malaysia"
+      ]
+    },
+    {
+      name: "Md. Kishor Morol*",
+      affiliations: [
+        "Elite Research Lab, NY, USA",
+        "Cornell University, NY, USA"
       ]
     }
   ];

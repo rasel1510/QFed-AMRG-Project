@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   authors: [
     { name: "Dip Kumar Saha" },
     { name: "Mohammad Rasel Ahmed" },
-    { name: "Md. Kishore Morol" },
-    { name: "Nafiz Fahad" }
+    { name: "Nafiz Fahad" },
+    { name: "Md. Kishore Morol" }
   ],
   openGraph: {
     title: "QFed-AMRG: Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation",

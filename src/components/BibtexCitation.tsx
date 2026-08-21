@@ -8,7 +8,7 @@ export default function BibtexCitation() {
 
   const bibtex = `@article{saha2026qfedamrg,
   title  = {QFed-AMRG: Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation},
-  author = {Saha*, Dip Kumar and Ahmed, Mohammad Rasel and Morol*, Md. Kishor and Fahad*, Nafiz},
+  author = {Saha*, Dip Kumar and Ahmed, Mohammad Rasel and Fahad*, Nafiz and Morol*, Md. Kishor},
   year   = {2026}
 }`;
 
