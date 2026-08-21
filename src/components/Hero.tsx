@@ -42,15 +42,15 @@ export default function Hero() {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-        {/* Paper Title */}
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 max-w-5xl mx-auto leading-tight sm:leading-tight text-slate-900 font-sans">
-          <span className="bg-gradient-to-r from-emerald-800 via-teal-700 to-indigo-800 bg-clip-text text-transparent font-black">
-            QFed-AMRG:
-          </span>{" "}
-          <span>
+        {/* Paper Title Display */}
+        <div className="max-w-5xl mx-auto mb-10 space-y-4">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black bg-gradient-to-r from-emerald-800 via-teal-700 to-indigo-900 bg-clip-text text-transparent tracking-tight font-sans">
+            QFed-AMRG
+          </h1>
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 max-w-5xl mx-auto leading-snug sm:leading-tight tracking-tight">
             Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation
-          </span>
-        </h1>
+          </h2>
+        </div>
 
         {/* Authors Section */}
         <div className="max-w-5xl mx-auto mb-10">
