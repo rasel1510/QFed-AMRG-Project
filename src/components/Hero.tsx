@@ -25,6 +25,13 @@ export default function Hero() {
         "Elite Research Lab, NY, USA",
         "Cornell University, NY, USA"
       ]
+    },
+    {
+      name: "Nafiz Fahad*",
+      affiliations: [
+        "Elite Research Lab, NY, USA",
+        "Multimedia University, Melaka, Malaysia"
+      ]
     }
   ];
 
@@ -35,19 +42,19 @@ export default function Hero() {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-        {/* Giant Main Brand Name */}
-        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black bg-gradient-to-r from-emerald-800 via-teal-700 to-indigo-800 bg-clip-text text-transparent tracking-tight mb-5 font-sans">
-          QFed-AMRG
+        {/* Paper Title */}
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 max-w-5xl mx-auto leading-tight sm:leading-tight text-slate-900 font-sans">
+          <span className="bg-gradient-to-r from-emerald-800 via-teal-700 to-indigo-800 bg-clip-text text-transparent font-black">
+            QFed-AMRG:
+          </span>{" "}
+          <span>
+            Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation
+          </span>
         </h1>
 
-        {/* Paper Title / Subtitle */}
-        <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 max-w-4xl mx-auto leading-snug sm:leading-tight mb-10">
-          Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation
-        </h2>
-
         {/* Authors Section */}
-        <div className="max-w-4xl mx-auto mb-10">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 text-center">
+        <div className="max-w-5xl mx-auto mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
             {authors.map((author, idx) => (
               <div
                 key={idx}

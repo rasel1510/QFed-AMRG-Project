@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://qfed-amrg.github.io"),
   title: "QFed-AMRG: Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation",
   description: "Official research website for QFed-AMRG: A communication-efficient quantum federated vision-language architecture for privacy-preserving multi-client clinical report generation.",
   keywords: [
@@ -18,7 +19,8 @@ export const metadata: Metadata = {
   authors: [
     { name: "Dip Kumar Saha" },
     { name: "Mohammad Rasel Ahmed" },
-    { name: "Md. Kishore Morol" }
+    { name: "Md. Kishore Morol" },
+    { name: "Nafiz Fahad" }
   ],
   openGraph: {
     title: "QFed-AMRG: Quantum Federated Driven VLM for Privacy Preserving Clinical Report Generation",
